@@ -14,13 +14,13 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
-    private Long preco;
+    private Long price;
 
     // Constructor
-    public Product(Integer id, String name, Long preco) {
+    public Product(Integer id, String name, Long price) {
         this.id = id;
         this.name = name;
-        this.preco = preco;
+        this.price = price;
     }
 
     // Getters
@@ -30,8 +30,8 @@ public class Product {
     public String getName() {
         return name;
     }
-    public Long getPreco() {
-        return preco;
+    public Long getprice() {
+        return price;
     }
 
     // Setters
@@ -41,8 +41,8 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
-    public void setPreco(Long preco) {
-        this.preco = preco;
+    public void setprice(Long price) {
+        this.price = price;
     }
 
 }
